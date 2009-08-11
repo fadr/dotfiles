@@ -1,0 +1,14 @@
+export PATH="$HOME/bin:/opt/local/bin:/usr/local/git/bin:/Applications/JacORB/bin:$HOME/.gem/ruby/1.8/bin:$PATH"
+
+export EDITOR="mate -w"
+export GIT_EDITOR='mate -w'
+export SVN_EDITOR='mate -w'
+
+# MacPorts Installer addition on 2008-12-15_at_13:40:13: adding an appropriate PATH variable for use with MacPorts.
+export PATH=/opt/local/bin:/opt/local/sbin:$PATH
+# Finished adapting your PATH environment variable for use with MacPorts.
+
+
+# MacPorts Installer addition on 2008-12-15_at_13:40:13: adding an appropriate MANPATH variable for use with MacPorts.
+export MANPATH=/opt/local/share/man:$MANPATH
+# Finished adapting your MANPATH environment variable for use with MacPorts.

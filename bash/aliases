@@ -1,0 +1,33 @@
+# TextMate
+alias e='mate .'
+# TextMate for Rails
+alias er='mate app config lib db public test vendor/plugin'
+# TextMate for Grimace
+alias eg='mate src meta'
+
+# GIT
+alias gst='git status'
+alias gco='git checkout'
+alias gb='git branch --color'
+alias gba='git branch -a --color'
+alias gc='git commit'
+alias gca='git commit -a -v'
+alias gpl='git pull'
+alias gpu='git push'
+
+
+# SVN
+alias st='svn st -u'
+alias sc='svn ci'
+alias su='svn up'
+
+# bash
+alias lsl='ls -l'
+alias flashtail='tail -f ~/Library/Preferences/Macromedia/Flash\ Player/Logs/flashlog.txt'
+
+# rails
+alias rss='./script/server'
+alias rsc='./script/console'
+
+# actionscript
+alias mxmlc='/Applications/Flex3SDK/bin/mxmlc'
