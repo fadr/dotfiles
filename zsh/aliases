@@ -1,7 +1,7 @@
 # TextMate
 alias e='mate .'
 # TextMate for Rails
-alias er='mate app config lib db public test vendor/plugin'
+alias er='mate app config lib db public test vendor/plugins'
 # TextMate for Grimace
 alias eg='mate src meta'
 

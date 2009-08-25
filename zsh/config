@@ -28,6 +28,10 @@ setopt EXTENDED_HISTORY # add more info
 #############################
 # Variables
 
+# Load custom functions
+fpath=(~/bin/dotfiles/zsh/functions $fpath)
+autoload -U ~/bin/dotfiles/zsh/functions/*(:t)
+
 # Quote pasted URLs
 autoload url-quote-magic
 zle -N self-insert url-quote-magic
@@ -42,6 +46,8 @@ LISTMAX=0 # ask to complete if top of list would scroll off screen
 # Load completions for Ruby, Git, etc.
 autoload compinit
 compinit
+
+
 
 # Make CTRL-W delete after other chars, not just spaces
 WORDCHARS=${WORDCHARS//[&=\/;\!#%\{]}
