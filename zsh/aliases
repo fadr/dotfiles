@@ -23,6 +23,7 @@ alias su='svn up'
 
 # bash
 alias lsl='ls -l'
+alias lsa="ls -a"
 alias flashtail='tail -f ~/Library/Preferences/Macromedia/Flash\ Player/Logs/flashlog.txt'
 
 # rails

@@ -2,7 +2,7 @@ autoload -U colors
 colors
 setopt prompt_subst
 PROMPT='%~ %{$fg[black];$bg[white]%}$(vcprompt)
-%{$reset_color%}>'
+%{$reset_color%}> '
 
 # Set RPROMPT to have info show up on the right, too.
 
@@ -53,3 +53,6 @@ WORDCHARS=${WORDCHARS//[&=\/;\!#%\{]}
 
 bindkey -e
 
+# activate delete key instead of printing ~
+bindkey    "^[[3~"          delete-char
+bindkey    "^[3;5~"         delete-char
