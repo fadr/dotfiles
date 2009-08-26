@@ -1,27 +1,27 @@
 [user]
 	name = Thomas Fadrus
 	email = t.fadrus@gmail.com
-	
+
 [apply]
 	whitespace = nowarn
-	
+
 [color]
-  branch = auto
-  diff = auto
-  status = auto
+	branch = auto
+	diff = auto
+	status = auto
 
 [color "branch"]
-  current = yellow reverse
-  local = cyan
-  remote = magenta
+	current = yellow reverse
+	local = cyan
+	remote = magenta
 
 [color "diff"]
-  meta = yellow bold
-  frag = magenta bold
-  old = red bold
-  new = green bold
+	meta = yellow bold
+	frag = magenta bold
+	old = red bold
+	new = green bold
 
 [color "status"]
-  added = yellow reverse
-  changed = cyan
-  untracked = magenta
+	added = yellow reverse
+	changed = cyan
+	untracked = magenta
