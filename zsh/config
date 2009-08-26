@@ -1,7 +1,8 @@
 autoload -U colors
 colors
 setopt prompt_subst
-PROMPT='%~ %{$fg[black];$bg[white]%}$(vcprompt)
+PROMPT='
+%{$fg[cyan]%}%~ %{$fg[black];$bg[white]%}$(vcprompt)
 %{$reset_color%}> '
 
 # Set RPROMPT to have info show up on the right, too.
@@ -45,8 +46,6 @@ LISTMAX=0 # ask to complete if top of list would scroll off screen
 # Load completions for Ruby, Git, etc.
 autoload compinit
 compinit
-
-
 
 # Make CTRL-W delete after other chars, not just spaces
 WORDCHARS=${WORDCHARS//[&=\/;\!#%\{]}
