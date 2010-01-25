@@ -1,4 +1,4 @@
-export PATH="$HOME/bin:/opt/local/bin:/usr/local/git/bin:/Applications/JacORB/bin:$HOME/.gem/ruby/1.8/bin:$PATH"
+export PATH="$HOME/bin:/opt/local/bin:/usr/local/git/bin:/Applications/JacORB/bin:$HOME/.gem/ruby/1.8/bin:.:$PATH"
 
 export EDITOR="mate -w"
 export GIT_EDITOR='mate -w'
