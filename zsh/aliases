@@ -27,6 +27,9 @@ alias lsa="ls -a"
 alias o='open .'
 alias flashtail='tail -f ~/Library/Preferences/Macromedia/Flash\ Player/Logs/flashlog.txt'
 
+# Testing
+alias autocuke='AUTOFEATURE=true autospec'
+
 # rails
 alias rss='./script/server'
 alias rsc='./script/console'
