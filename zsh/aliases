@@ -15,12 +15,6 @@ alias gca='git commit -a -v'
 alias gpl='git pull'
 alias gpu='git push'
 
-
-# SVN
-alias st='svn st -u'
-alias sc='svn ci'
-alias su='svn up'
-
 # shell
 alias lsl='ls -l'
 alias lsa="ls -a"
