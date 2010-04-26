@@ -3,5 +3,3 @@
 
 . ~/bin/dotfiles/zsh/config
 . ~/bin/dotfiles/zsh/aliases
-
-if [[ -s /Users/tfadrus/.rvm/scripts/rvm ]] ; then source /Users/tfadrus/.rvm/scripts/rvm ; fi
