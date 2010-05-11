@@ -13,9 +13,8 @@ rescue LoadError => err
   warn "Couldn't load Wirble: #{err}"
 end
 
-
 begin
-  require 'hirb'
-  Hirb.enable
-rescue LoadError
+  require "ap"
+rescue LoadError => err
+  warn "Coudn't load awesome_print"
 end

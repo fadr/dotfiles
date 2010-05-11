@@ -33,3 +33,7 @@ alias mxmlc='/Applications/Flex3SDK/bin/mxmlc'
 
 # ssh
 alias sshhost="mate ~/bin/dotfiles/ssh/config"
+
+# tupalo dev
+alias tupdb-start="sudo su pguser -c '/opt/local/lib/postgresql84/bin/pg_ctl -D /Users/tfadrus/dbs/tupalo/data/ start'"
+alias tupdb-stop="sudo su pguser -c '/opt/local/lib/postgresql84/bin/pg_ctl -D /Users/tfadrus/dbs/tupalo/data/ stop'"
