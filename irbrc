@@ -15,6 +15,7 @@ end
 
 begin
   require "ap"
+  require 'looksee/shortcuts'
 rescue LoadError => err
-  warn "Coudn't load awesome_print"
+  warn "Coudn't load gem: #{err}"
 end
