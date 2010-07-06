@@ -1,9 +1,5 @@
 # TextMate
 alias e='mate .'
-# TextMate for Rails
-alias er='mate app config lib db public test vendor/plugins'
-# TextMate for Grimace
-alias eg='mate src meta'
 
 # GIT
 alias gst='git status'
@@ -18,6 +14,7 @@ alias gpu='git push'
 # shell
 alias lsl='ls -l'
 alias lsa="ls -a"
+alias lsla="ls -la"
 alias o='open .'
 alias flashtail='tail -f ~/Library/Preferences/Macromedia/Flash\ Player/Logs/flashlog.txt'
 
@@ -27,6 +24,7 @@ alias autocuke='AUTOFEATURE=true autospec'
 # rails
 alias rss='./script/server'
 alias rsc='./script/console'
+alias bndlx='bundle exec'
 
 # actionscript
 alias mxmlc='/Applications/Flex3SDK/bin/mxmlc'

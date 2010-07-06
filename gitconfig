@@ -25,3 +25,6 @@
 	added = yellow reverse
 	changed = cyan
 	untracked = magenta
+
+[push]
+	default = current
