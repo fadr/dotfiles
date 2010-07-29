@@ -22,8 +22,8 @@ alias flashtail='tail -f ~/Library/Preferences/Macromedia/Flash\ Player/Logs/fla
 alias autocuke='AUTOFEATURE=true autospec'
 
 # rails
-alias rss='./script/server'
-alias rsc='./script/console'
+# alias rss='./script/server'
+# alias rsc='./script/console'
 alias bndlx='bundle exec'
 
 # actionscript

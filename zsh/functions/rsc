@@ -1,0 +1,5 @@
+if [ -e script/rails ]; then
+  script/rails console $@
+else
+  script/console $@
+fi
