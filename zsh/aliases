@@ -24,7 +24,7 @@ alias autocuke='AUTOFEATURE=true autospec'
 # rails
 # alias rss='./script/server'
 # alias rsc='./script/console'
-alias bndlx='bundle exec'
+alias bx='bundle exec'
 
 # actionscript
 alias mxmlc='/Applications/Flex3SDK/bin/mxmlc'
@@ -33,7 +33,7 @@ alias mxmlc='/Applications/Flex3SDK/bin/mxmlc'
 alias sshhost="mate ~/bin/dotfiles/ssh/config"
 
 # tupalo dev
-alias tupdb-start="sudo su pguser -c '/opt/local/lib/postgresql84/bin/pg_ctl -D /Users/tfadrus/dbs/tupalo/data/ start'"
-alias tupdb-stop="sudo su pguser -c '/opt/local/lib/postgresql84/bin/pg_ctl -D /Users/tfadrus/dbs/tupalo/data/ stop'"
+alias tdb="sudo su pguser -c '/opt/local/lib/postgresql84/bin/pg_ctl -D /Users/tfadrus/dbs/tupalo/data/ start'"
+alias tdbstop="sudo su pguser -c '/opt/local/lib/postgresql84/bin/pg_ctl -D /Users/tfadrus/dbs/tupalo/data/ stop'"
 alias tups="./script/startup"
-alias tupdb-q="psql tupalo_development -c "
+alias tdbq="psql tupalo_development -c "

@@ -1,4 +1,4 @@
-if [ -e script/rails]; then
+if [ -e script/rails ]; then
   script/rails server $@
 else
   script/server $@
