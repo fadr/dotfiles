@@ -25,6 +25,9 @@ alias autocuke='AUTOFEATURE=true autospec'
 # alias rss='./script/server'
 # alias rsc='./script/console'
 alias bx='bundle exec'
+alias bxr='bx rake'
+alias bxrdbm='bxr db:migrate'
+
 
 # actionscript
 alias mxmlc='/Applications/Flex3SDK/bin/mxmlc'
