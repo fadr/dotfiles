@@ -1,0 +1,5 @@
+if [ -e script/rails ]; then
+  script/rails generate migration $@
+else
+  script/generate migration $@
+fi
