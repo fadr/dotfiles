@@ -1,42 +1,42 @@
 # TextMate
 alias e='mate .'
 
+# directory stuff
+alias 1='cd -'
+alias 2='cd +2'
+alias 3='cd +3'
+alias 4='cd +4'
+alias 5='cd +5'
+alias 6='cd +6'
+alias 7='cd +7'
+alias 8='cd +8'
+alias 9='cd +9'
+
 # GIT
 alias gst='git status'
 alias gco='git checkout'
 alias gb='git branch --color'
 alias gba='git branch -a --color'
-alias gc='git commit'
+alias gc='git commit -v'
 alias gca='git commit -a -v'
 alias gpl='git pull'
 alias gpu='git push'
+alias gx='gitx'
 
 # shell
 alias lsl='ls -l'
 alias lsa="ls -a"
 alias lsla="ls -la"
 alias o='open .'
-alias flashtail='tail -f ~/Library/Preferences/Macromedia/Flash\ Player/Logs/flashlog.txt'
 
 # Testing
 alias autocuke='AUTOFEATURE=true autospec'
 
 # rails
-# alias rss='./script/server'
-# alias rsc='./script/console'
 alias bx='bundle exec'
 alias bxr='bx rake'
-alias bxrdbm='bxr db:migrate'
-
-
-# actionscript
-alias mxmlc='/Applications/Flex3SDK/bin/mxmlc'
+alias rdbm='bxr db:migrate'
+alias rdbp='bxr db:test:prepare'
 
 # ssh
 alias sshhost="mate ~/bin/dotfiles/ssh/config"
-
-# tupalo dev
-alias tdb="sudo su tfadrus -c '/opt/local/lib/postgresql84/bin/pg_ctl -D /Users/tfadrus/dbs/tupalo/data/ start'"
-alias tdbstop="sudo su tfadrus -c '/opt/local/lib/postgresql84/bin/pg_ctl -D /Users/tfadrus/dbs/tupalo/data/ stop'"
-alias tups="./script/startup"
-alias tdbq="psql tupalo_development -c "

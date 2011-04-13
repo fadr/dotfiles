@@ -2,7 +2,7 @@ autoload -U colors
 colors
 setopt prompt_subst
 PROMPT='
-%{$fg[cyan]%}%~ %{$fg[black]%}$(vcprompt)
+%{$fg[cyan]%}%~ %{$fg_bold[magenta]%}$(vcprompt)
 %{$reset_color%}> '
 
 # Set RPROMPT to have info show up on the right, too.
@@ -58,5 +58,5 @@ bindkey    "^[[3~"          delete-char
 bindkey    "^[3;5~"         delete-char
 
 if [ -s ~/.rvm/scripts/rvm ] ; then source ~/.rvm/scripts/rvm ; fi
-
+if [ -f ~/.TUP ]; then cd ~/src/tupalo-main; fi
 ulimit -n 1024

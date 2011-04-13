@@ -1,0 +1,6 @@
+#!/bin/zsh
+if [[ -z $1 ]]; then
+  psql tupalo_development
+elif [ $1 = "live" ]; then
+  psql -h db.live.in.tupalo.com -U tupalo tupalo_production
+fi

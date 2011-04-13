@@ -1,0 +1,1 @@
+grb new $1_`date +"%Y%m%d"`
