@@ -1,1 +1,1 @@
---type-add=ruby=.haml,.erb,.feature,.sass,.js
+--type-add=ruby=.haml,.erb,.feature,.sass,.js,.scss,.coffee,.less
