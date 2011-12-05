@@ -1,0 +1,7 @@
+[ui]
+username = Thomas Fadrus <thomas@fadr.us>
+verbose = True
+
+[extensions]
+hgext.graphlog =
+hgext.convert =
