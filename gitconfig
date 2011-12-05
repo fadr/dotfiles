@@ -1,9 +1,12 @@
 [user]
   name = Thomas Fadrus
-  email = t.fadrus@gmail.com
+  email = thomas@fadr.us
 
 [apply]
   whitespace = nowarn
+
+[color]
+  ui = auto
 
 [color]
   branch = auto
@@ -16,11 +19,13 @@
   remote = magenta
 
 [color "diff"]
-  meta = yellow bold
-  frag = magenta bold
+  meta = yellow
+  frag = magenta
   old = red bold
   new = green bold
-
+  whitespace = red reverse
+[core]
+  whitespace=fix,-indent-with-non-tab,trailing-space,cr-at-eol
 [color "status"]
   added = yellow reverse
   changed = cyan
