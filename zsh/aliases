@@ -26,6 +26,7 @@ alias gpl='git pull'
 alias gpu='git push'
 alias gup='git up'
 alias gx='gitx'
+alias ggr='git log --oneline --decorate --graph'
 alias gnb='new_local_branch'
 
 # shell
