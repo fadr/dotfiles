@@ -1,0 +1,1 @@
+git checkout -b $1_`date +"%Y%m%d"`
