@@ -26,10 +26,12 @@
   whitespace = red reverse
 [core]
   whitespace=fix,-indent-with-non-tab,trailing-space,cr-at-eol
+  excludesfile = /Users/tfadrus/.gitignore
 [color "status"]
   added = yellow reverse
   changed = cyan
   untracked = magenta
-
+[pull]
+  default = current
 [push]
   default = current
