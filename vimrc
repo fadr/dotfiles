@@ -3,11 +3,11 @@ set hidden
 let mapleader=","
 
 set nocompatible
+syntax off
 if has("gui_running")
   set number
   set ruler
 endif
-syntax off
 
 " Set encoding
 set encoding=utf-8
@@ -34,9 +34,6 @@ set wildignore+=*.o,*.obj,.git,*.rbc,*.class,.svn,vendor/gems/*
 
 " Status bar
 set laststatus=2
-
-" Command-T configuration
-let g:CommandTMaxHeight=20
 
 " Remember last location in file
 if has("autocmd")
@@ -83,3 +80,9 @@ au FileType php filetype plugin indent off
 " Map Tab to indent and Shift-Tab to unindent
 vmap <Tab> >gv
 vmap <S-Tab> <gv
+if has('gui_macvim')
+  map <Leader>t <Plug>PeepOpen
+  autocmd VimResized * wincmd =
+endif
+let g:returnAppFlag = 1
+let g:returnApp = "MacVim"
