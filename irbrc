@@ -32,8 +32,8 @@ rescue LoadError => err
 end
 
 begin
-  require "ap"
   require 'looksee/shortcuts'
 rescue LoadError => err
   warn "Coudn't load gem: #{err}"
 end
+require "ap"
