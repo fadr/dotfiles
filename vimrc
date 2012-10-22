@@ -4,10 +4,6 @@ let mapleader=","
 
 set nocompatible
 syntax off
-if has("gui_running")
-  set number
-  set ruler
-endif
 
 " Set encoding
 set encoding=utf-8
@@ -18,9 +14,6 @@ set tabstop=2
 set shiftwidth=2
 set softtabstop=2
 set expandtab
-if has("gui_running")
-  set list listchars=tab:\ \ ,trail:·
-endif
 
 " Searching
 set hlsearch
@@ -66,23 +59,28 @@ set directory=~/.vim/tmp
 set showcmd
 
 if has("gui_running")
+  set list listchars=tab:\ \ ,trail:·
   " Automatically resize splits when resizing MacVim window
   autocmd VimResized * wincmd =
 endif
 
-set guifont=Inconsolata:h14
-autocmd BufRead,BufNewFile *.less set filetype=css
-let g:CommandTAcceptSelectionMap = '<C-t>'
-let g:CommandTAcceptSelectionTabMap = '<CR>'
-let g:LustyExplorerSuppressRubyWarning = 1
+au BufRead,BufNewFile *.scss set filetype=scss
+" let g:LustyExplorerSuppressRubyWarning = 1
 au FileType php filetype plugin indent off
 
 " Map Tab to indent and Shift-Tab to unindent
 vmap <Tab> >gv
 vmap <S-Tab> <gv
-if has('gui_macvim')
-  map <Leader>t <Plug>PeepOpen
-  autocmd VimResized * wincmd =
-endif
 let g:returnAppFlag = 1
 let g:returnApp = "MacVim"
+let g:ragtag_global_maps = 1
+map <D-1> "ayy
+map <Leader>1 "ap
+map <D-2> "byy
+map <Leader>2 "bp
+:au! BufWritePost $MYVIMRC source $MYVIMRC
+let g:ctrlp_working_path_mode = 0
+map <Leader>b :CtrlPBuffer<CR>
+let g:ctrlp_custom_ignore = {'dir': '\/build'}
+let g:ctrlp_follow_symlinks = 1
+let g:neocomplcache_enable_at_startup = 1
