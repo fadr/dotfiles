@@ -4,8 +4,7 @@ setopt prompt_subst
 PROMPT='
 %{$fg[cyan]%}%~
 %{$reset_color%}> '
-RPROMPT='%{$fg[white]%}$(vcprompt -f "%n:%b %h %m%u")%{$reset_color%}'
-
+RPROMPT='%{$fg[base1]%}$(vcprompt -f "%n:%b %h %m%u")%{$reset_color%}'
 
 # Set RPROMPT to have info show up on the right, too.
 
