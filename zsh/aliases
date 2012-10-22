@@ -1,16 +1,11 @@
 # TextMate
 alias e='mate .'
 
-# directory stuff
-alias 1='cd -'
-alias 2='cd +2'
-alias 3='cd +3'
-alias 4='cd +4'
-alias 5='cd +5'
-alias 6='cd +6'
-alias 7='cd +7'
-alias 8='cd +8'
-alias 9='cd +9'
+#directory stuff
+alias 1="cd .."
+alias 2="cd ../.."
+alias 3="cd ../../.."
+alias 0="cd -"
 
 alias tr='tree -A -C'
 
@@ -26,7 +21,10 @@ alias gpl='git pull'
 alias gpu='git push'
 alias gup='git up'
 alias gx='gitx'
-alias ggr='git log --oneline --decorate --graph'
+alias gr='git log --oneline --graph'
+alias ggr='git log --graph'
+alias grr='git log --graph --oneline --all --decorate'
+alias ggrr='git log --graph --all --decorate'
 alias gnb='new_local_branch'
 
 # shell
@@ -46,3 +44,7 @@ alias rdbp='bxr db:test:prepare'
 
 # ssh
 alias sshhost="mate ~/bin/dotfiles/ssh/config"
+
+# radar services
+alias rs-db="sudo /usr/local/mysql/support-files/mysql.server start"
+alias rs-db-stop="sudo /usr/local/mysql/support-files/mysql.server stop"
