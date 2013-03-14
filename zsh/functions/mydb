@@ -1,0 +1,8 @@
+#!/bin/zsh
+if [[ -z $1 ]]; then
+  sudo /usr/local/mysql/support-files/mysql.server start
+elif [ $1 = "stop" ]; then
+  sudo /usr/local/mysql/support-files/mysql.server stop
+elif [ $1 = "status" ]; then
+  sudo /usr/local/mysql/support-files/mysql.server status
+fi
