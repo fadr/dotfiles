@@ -78,9 +78,18 @@ map <D-1> "ayy
 map <Leader>1 "ap
 map <D-2> "byy
 map <Leader>2 "bp
+map <D-3> "cyy
+map <Leader>3 "cp
+map <D-4> "dyy
+map <Leader>4 "dp
 :au! BufWritePost $MYVIMRC source $MYVIMRC
 let g:ctrlp_working_path_mode = 0
 map <Leader>b :CtrlPBuffer<CR>
-let g:ctrlp_custom_ignore = {'dir': '\/build'}
+set wildignore+=*/doc/*
+set wildignore+=.DS_Store
+let g:ctrlp_custom_ignore = {
+      \ 'dir': '\/build',
+      \ 'file': '\v\.(mp3|jpg|png|gif)$'
+      \ }
 let g:ctrlp_follow_symlinks = 1
 let g:neocomplcache_enable_at_startup = 1
