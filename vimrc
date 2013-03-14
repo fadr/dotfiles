@@ -66,9 +66,10 @@ if has("gui_running")
   autocmd VimResized * wincmd =
 endif
 
-au BufRead,BufNewFile *.scss set filetype=scss
-" let g:LustyExplorerSuppressRubyWarning = 1
 au FileType php filetype plugin indent off
+au BufRead,BufNewFile *.scss set filetype=scss
+au BufRead,BufNewFile *.as set filetype=actionscript
+" let g:LustyExplorerSuppressRubyWarning = 1
 
 " Map Tab to indent and Shift-Tab to unindent
 vmap <Tab> >gv
