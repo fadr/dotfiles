@@ -1,4 +1,4 @@
-export PATH="/usr/local/bin:$HOME/bin:/opt/local/bin:/usr/local/git/bin:.:$HOME/.rbenv/bin:/usr/local/mysql/bin:/usr/local/sbin:/Applications/Postgres.app/Contents/MacOS/bin:$PATH"
+export PATH="/usr/local/bin:$HOME/bin:/opt/local/bin:/usr/local/git/bin:.:$HOME/.rbenv/bin:/usr/local/mysql/bin:/usr/local/sbin:/Applications/Postgres.app/Contents/MacOS/bin:/usr/local/share/npm/bin:$PATH"
 PATH="/Applications/Postgres.app/Contents/MacOS/bin:$PATH"
 
 export NODE_PATH="/usr/local/lib/node_modules"
@@ -6,8 +6,8 @@ export EDITOR="mate -w"
 export GIT_EDITOR='vim'
 export SVN_EDITOR='mate -w'
 export VIM_APP_DIR='/Applications/MacVim'
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
 if [[ -d $HOME/.rbenv ]]; then
   eval "$(rbenv init -)"
 fi
-export LC_ALL=en_US.UTF-8
-export LANG=en_US.UTF-8
