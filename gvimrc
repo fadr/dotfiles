@@ -28,8 +28,8 @@ set antialias
 set gfn=Nitti\ Basic\ Normal:h14
 " set guifont=Ubuntu\ Mono:h14
 set linespace=1
-" set background=dark
-colorscheme Tomorrow-Night-Eighties
+set background=dark
+colorscheme solarizedmod
 nnoremap <esc> :noh<return><esc>
 
 
