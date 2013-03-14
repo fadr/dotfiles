@@ -58,7 +58,9 @@ set directory=~/.vim/tmp
 " Show (partial) command in the status line
 set showcmd
 
+
 if has("gui_running")
+  " show whitespaces as dots
   set list listchars=tab:\ \ ,trail:·
   " Automatically resize splits when resizing MacVim window
   autocmd VimResized * wincmd =
