@@ -1,0 +1,7 @@
+project_name: ric
+project_root: ~/src/radarservices/ric
+tabs:
+  - logs: tail -f log/development.log
+  - mysql: rsdb
+  - memcached: memcached -vv
+  - zsh:

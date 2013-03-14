@@ -1,0 +1,12 @@
+# ~/.tmuxinator/ric.yml
+# you can make as many tabs as you wish...
+
+project_name: rr
+project_root: ~/src/radarservices/rr
+#rvm: 1.9.3-p125@rails3
+#pre: sudo /etc/rc.d/mysqld start
+pre: redis-server /usr/local/etc/redis.conf
+tabs:
+  - sidekiq: bundle exec sidekiq
+  - server: rails s -p 8087
+  - logs: tail -f log/development.log

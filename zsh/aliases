@@ -48,3 +48,6 @@ alias sshhost="mate ~/bin/dotfiles/ssh/config"
 # radar services
 alias rs-db="sudo /usr/local/mysql/support-files/mysql.server start"
 alias rs-db-stop="sudo /usr/local/mysql/support-files/mysql.server stop"
+alias all_radar='mux start rmca & sleep 3; tmux detach-client -s rmca; mux start rr & sleep 3; tmux detach-client -s rr; mux start ric & sleep 3; tmux detach-client -s ric'
+alias mk="tmux kill-session"
+
